@@ -45,7 +45,6 @@ nmcli connection modify eth0 ipv4.dns "192.168.100.1"
 nmcli connection modify eth0 ipv4.method manual
 nmcli connection up eth0
 ```
-
 2. Firewall Rule Base (pfSense LAN Interface)
 
 Rules are evaluated from top to bottom (first-match basis):
