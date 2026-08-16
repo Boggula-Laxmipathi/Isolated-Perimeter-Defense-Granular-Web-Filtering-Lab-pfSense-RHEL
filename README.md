@@ -39,9 +39,13 @@ An end-to-end network security lab demonstrating hypervisor network segmentation
 
     bash
 nmcli connection modify eth0 ipv4.addresses 192.168.100.10/24
+
 nmcli connection modify eth0 ipv4.gateway 192.168.100.1
+
 nmcli connection modify eth0 ipv4.dns "192.168.100.1"
+
 nmcli connection modify eth0 ipv4.method manual
+
 nmcli connection up eth0
 
 2. Firewall Rule Base (pfSense LAN Interface)
