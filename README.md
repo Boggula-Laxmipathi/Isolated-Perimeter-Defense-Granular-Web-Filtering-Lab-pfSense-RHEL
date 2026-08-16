@@ -4,30 +4,6 @@ Network perimeter defense lab showcasing zero-trust segmentation, Layer 4 statef
 
 An end-to-end network security lab demonstrating hypervisor network segmentation, stateful packet filtering, and Layer 7 granular access control using a **pfSense Community Edition Firewall** and a **Red Hat Enterprise Linux (RHEL)** client.
 
----
-
-## 📌 Architecture & Traffic Topology
-
-```text
--------------------------------------------------------------------------+
-|                              HYPERVISOR                                 |
-|                                                                         |
-|  +--------------------+                   +--------------------------+  |
-|  |     RHEL Client    |                   |     pfSense Firewall     |  |
-|  |    (Test Endpoint) |                   |    (Gateway & Security)  |  |
-|  |                    |                   |                          |  |
-|  | IP: 192.168.100.10 |                   | LAN: 192.168.100.1/24    |  |
-|  | Gateway: .1        |                   | WAN: DHCP / Bridged      |  |
-|  +---------+----------+                   +----+----------------+----+  |
-|            |                                   |                |       |
-|            +======= [ Isolated VNet / LAN ] ===+                |       |
-+-----------------------------------------------------------------|-------+
-|
-[ Physical LAN ]
-|
-( Internet )
-
-
 
 ---------
 
@@ -81,3 +57,28 @@ Skills & Tools Demonstrated
 Security Tools: pfSense CE, Stateful Packet Filtering, DNSBL / pfBlockerNG.
 Operating Systems: Red Hat Enterprise Linux (RHEL 9), Linux Networking CLI (nmcli, ip, ss, curl).
 Networking Concepts: Virtual Switches, Network Isolation, NAT/PAT, Rule Order Logic, DNS Resolution.
+
+
+---
+
+## 📌 Architecture & Traffic Topology
+
+```text
+-------------------------------------------------------------------------+
+|                              HYPERVISOR                                 |
+|                                                                         |
+|  +--------------------+                   +--------------------------+  |
+|  |     RHEL Client    |                   |     pfSense Firewall     |  |
+|  |    (Test Endpoint) |                   |    (Gateway & Security)  |  |
+|  |                    |                   |                          |  |
+|  | IP: 192.168.100.10 |                   | LAN: 192.168.100.1/24    |  |
+|  | Gateway: .1        |                   | WAN: DHCP / Bridged      |  |
+|  +---------+----------+                   +----+----------------+----+  |
+|            |                                   |                |       |
+|            +======= [ Isolated VNet / LAN ] ===+                |       |
++-----------------------------------------------------------------|-------+
+|
+[ Physical LAN ]
+|
+( Internet )
+
