@@ -37,7 +37,7 @@ An end-to-end network security lab demonstrating hypervisor network segmentation
 
 **RHEL Endpoint Network Configuration:**
 
-```bash
+    bash
 nmcli connection modify eth0 ipv4.addresses 192.168.100.10/24
 nmcli connection modify eth0 ipv4.gateway 192.168.100.1
 nmcli connection modify eth0 ipv4.dns "192.168.100.1"
