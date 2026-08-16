@@ -77,8 +77,7 @@ Security Tools: pfSense CE, Stateful Packet Filtering, DNSBL / pfBlockerNG.
 Operating Systems: Red Hat Enterprise Linux (RHEL 9), Linux Networking CLI (nmcli, ip, ss, curl).
 Networking Concepts: Virtual Switches, Network Isolation, NAT/PAT, Rule Order Logic, DNS Resolution.
 
-
----
+```
 
 ## 📌 Architecture & Traffic Topology
 
