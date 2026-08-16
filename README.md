@@ -9,7 +9,7 @@ An end-to-end network security lab demonstrating hypervisor network segmentation
 ## 📌 Architecture & Traffic Topology
 
 ```text
-+-------------------------------------------------------------------------+
+-------------------------------------------------------------------------+
 |                              HYPERVISOR                                 |
 |                                                                         |
 |  +--------------------+                   +--------------------------+  |
@@ -22,14 +22,14 @@ An end-to-end network security lab demonstrating hypervisor network segmentation
 |            |                                   |                |       |
 |            +======= [ Isolated VNet / LAN ] ===+                |       |
 +-----------------------------------------------------------------|-------+
-                                                                  |
-                                                           [ Physical LAN ]
-                                                                  |
-                                                            ( Internet )
+|
+[ Physical LAN ]
+|
+( Internet )
 
 
 
-#######
+---------
 
 Key Topology Attributes
 Network Isolation: The RHEL endpoint has zero direct access to the physical LAN or Internet adapter.
