@@ -26,6 +26,11 @@ An end-to-end network security lab demonstrating hypervisor network segmentation
                                                            [ Physical LAN ]
                                                                   |
                                                             ( Internet )
+
+
+
+#######
+
 Key Topology Attributes
 Network Isolation: The RHEL endpoint has zero direct access to the physical LAN or Internet adapter.
 Single Path Egress: All ingress and egress traffic traverses the pfSense virtual appliance.
