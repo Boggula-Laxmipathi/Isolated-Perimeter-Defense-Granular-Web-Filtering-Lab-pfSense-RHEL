@@ -43,7 +43,6 @@ nmcli connection modify eth0 ipv4.gateway 192.168.100.1
 nmcli connection modify eth0 ipv4.dns "192.168.100.1"
 nmcli connection modify eth0 ipv4.method manual
 nmcli connection up eth0
-
 2. Firewall Rule Base (pfSense LAN Interface)
 Rules are evaluated from top to bottom (first-match basis):
 PriorityActionProtocolSourcePortDestinationPortDescription
@@ -51,7 +50,6 @@ PriorityActionProtocolSourcePortDestinationPortDescription
 2PassTCP192.168.100.10*Alias_Allowed_Sites80, 443Permit Allowed Web Categories
 3BlockTCP192.168.100.10**80, 443Block Non-Approved Web Destinations
 4BlockAny192.168.100.10***Default Deny (Drop all non-web traffic)
-
 3. Verification & Validation Testing
 Execute the following test battery from the RHEL endpoint terminal:
 Test A: Approved Web Traffic (Expected: HTTP 200 / Success)
